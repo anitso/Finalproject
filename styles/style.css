@@ -19,6 +19,10 @@ header{
 .pic{
     width: 15px;
 }
+.prof{
+    width: 200px;
+
+}
 .slider{
     width: calc(3*15rem);
     height:20rem;
