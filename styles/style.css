@@ -1,0 +1,479 @@
+:root{
+    font-size: 16px;
+    --main: #E93656
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #DDDDDD;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.slider{
+    width: calc(3*15rem);
+    height:20rem;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.slide-area{
+    height: 100%;
+}
+.slide-area div{
+    width: 100%;
+    height: calc(3*15rem);
+    position: absolute;
+    transition: all 1s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.header-text{
+    margin-right: 30px;    
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.header-text h2{
+    font-family:  "Glacia Regular";
+}
+.header-text h1{
+    font-family: "Glacia Bold";
+}
+.header-text p{
+    font-family: "Glacia Regular";
+}
+.socials a{
+    text-decoration: none;
+    margin-left: 10px;
+    
+}
+.about{
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    margin: 100px 0;
+    flex-wrap: wrap;
+}
+.about-me{
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.about-me p{
+    max-width: fit-content;
+    font-family: "Muli Regular";
+}
+.abt-wrap{
+    font-family: "Glacia Bold";
+}
+.proffesion{
+    color: #DAAE19;
+    font-family: "Muli";
+}
+.hire{
+    background-color: var(--main);
+    color: white;
+    height: 2rem;
+    border: none;
+    font-family: "Glacia Bold";
+}
+
+.progress-bar{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bar-section{
+    display: flex;
+    flex-direction: column;
+}
+.bar-wrap{
+    display: flex;
+}
+.bar-wrap h3{
+    font-family: "Glacia Bold";
+}
+.percentile{
+    color: var(--main);
+    font-family: "Glacia Bold";
+}
+.progress{
+    background-color: var(--main);
+    width: 0%;
+    height: 5px;
+}
+
+.contact{
+    background-color: #131A36;
+    display: flex;
+    justify-content: center;
+}
+.contact div{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+.contact img{
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+}
+.text-contact{
+ display: flex;   
+ flex-direction: column;
+ color: white;
+ font-family: "Glacia Bold";
+}
+#contact-wrap{
+    width: 55px;
+    height: 55px;
+    border: 2px dotted white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-wrap:hover{
+    background-color: #E93656;
+    border: 2px solid #131A36;
+}
+.services{
+    justify-content: center;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 280px 280px ;
+    grid-gap: 10px;
+}
+.service{
+    position: relative;
+    width: 280px;
+    height: 360px;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hover img{
+    width: 24px;
+    height: 24px;
+}
+.hover h3{
+    font-family: "Glacia Bold";
+}
+.services-text{
+    position: absolute;
+    visibility: hidden;
+    color: white;
+    font-family: "Muli Regular";
+}
+.service:hover h3{
+    color: white;
+    position: absolute;
+    top: 70px;
+}
+.service:hover .services-text{
+    visibility: visible;
+}
+
+.service:hover img{
+    visibility: hidden;
+}
+.service:hover{
+    background-color: #222222;
+}
+.service p {
+    width: 222px;
+    height: 70px;
+}
+
+.recomendations{
+    position: relative;
+}
+#recom-back{
+    height: 360px;
+    width: 98.7vw;
+}
+
+.recom-wrap{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lorem{
+    width: 380px;
+    color: white;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Light';
+}
+.brown-dot{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #B97679;
+}
+.dot-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;    
+    border-radius: 50%;
+    border: 2px dotted white;
+}
+
+.quot{
+    font-size: 80px;
+    color: white;
+    white-space: 0;
+}
+.designer{
+    color: #E93656;
+    font-family: "Roboto Regular";
+}
+#square-2{
+    color: #E93656;
+}
+.name{
+    font-family: "Glacia Bold";
+    margin-top:20px;
+    color: white;
+}
+.ident{
+    height: 170px;
+}
+.squares{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.square{
+    cursor: pointer;
+}
+.latest{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+    font-family: "Glacia Bold";
+}
+.categories{
+    background-color: #15263E;
+    width: 240px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+.categories li{
+    color: white;
+    font-family: "Glacia Bold";
+}
+.projects-wrap{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects-div {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.visible{
+    font-family: "Glacia Bold";
+    text-align: center;
+}
+.invisible{
+    margin-top: 20px;
+    display: initial;
+    color: white;
+}
+#all{
+    color: var(--main);
+}
+.invisible a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--main);
+    display: flex;
+    justify-content: center;
+    font-family: "Muli";
+}
+.latest-articles{
+    margin-top: 100px;
+}
+.latest-articles h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: "Glacia Bold";
+}
+.article{
+    display: flex;
+}
+.article-text span{
+    font-family: "Muli";
+}
+.article-text{
+    margin: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.article-text h2{
+    font-family: "Glacia Bold";
+}
+.article-text p{
+    height: 140px;
+    width: 25rem;
+    margin-top: 20px;
+    font-family: "Muli";
+
+}
+.article-text span{
+    color: #888888;
+}
+.date{
+    background-color: #15263E;
+    height: 36.875rem;
+    width: 7.75rem;
+    font-size: 2rem;
+    color: var(--main);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blank{
+    width: 100%;
+    background-color: #E1E0DC;
+}
+.news-events{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news-span{
+    color: #2ED279;
+    font-family: "Glacial Bold";
+}
+.news-wrap{
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.rosa{
+    font-family: "Glacia Bold";
+    font-size: 70px;
+}
+.card{
+    background-color: #15263E;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    border: 2px solid white;
+}
+.card-child{
+    text-align: center;
+    display: none;
+    font-family: "Glacia Bold";
+}
+.card:hover{
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 12px;
+}
+
+.card:hover .card-child{
+    display: initial;
+}
+
+footer{
+    position: relative;;
+}
+footer img{
+    width: 100%;
+    opacity: 0.5;
+    filter: invert(0%) sepia(2%) saturate(75%) hue-rotate(268deg) brightness(0.6) contrast(40%);
+}
+.contact-us{
+    position: absolute;
+    width: 100%;
+    top: 1rem;
+    text-align: center;
+    font-family: "Roboto Light";
+    color: white;
+}
+
+#form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.personal-info{
+    display: flex;
+}
+.label-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin-right: 20px;
+    width: 10rem;
+    height: 2rem;
+}
+textarea{
+    margin-top: 20px;
+}
+#submit{
+    margin: 20px;
+    background: none;
+    padding: 20px 50px;
+    border: 1px solid #E93656;
+    color: #E93656;
+    font-family: "Glacia Bold";
+}
