@@ -16,6 +16,9 @@ header{
     align-items: center;
     flex-wrap: wrap;
 }
+.pic{
+    width: 15px;
+}
 .slider{
     width: calc(3*15rem);
     height:20rem;
